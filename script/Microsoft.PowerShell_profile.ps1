@@ -1,20 +1,11 @@
 #Clear screen
 cls
 
-#Display Label
-    Write-Host ""
-    Write-Host "  00000  0  0     0    0      0000    00 " 
-    Write-Host "    0    0  0    0 0   0      0      0  0 " 
-    Write-Host "    0    0000   0   0  0      000     0 " 
-    Write-Host "    0    0  0   00000  0      0        0 " 
-    Write-Host "    0    0  0   0   0  0      0      0  0 " 
-    Write-Host "    0    0  0   0   0  0000   0000    00 " 
-
 #UserName variable
 $username = Get-ChildItem -Path Env:\USERNAME | Select Name -ExpandProperty value
 
 #Start folder
-Set-Location C:\Users\$username\GIT_REPO
+Set-Location C:\Users\$username\Downloads
 
 # ========================= >
 
